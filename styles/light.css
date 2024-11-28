@@ -5,12 +5,12 @@
   --text-color-emphasis: #353430;
   --background-color-primary: #FF8DCB;
   --background-color-secondary: #FF0070;
+  --background-image: url(../images/cover-image-light.png);
   --font-family: "IBM Plex Mono", sans-serif;
   --font-weight-bold: 700;
   --font-weight-normal: 400;
+  --rec-visible: hidden;
 }
-
-/* Остальные стили */
 
 @media (prefers-color-scheme: light) {
 :root {
@@ -20,25 +20,11 @@
   --text-color-emphasis: #353430;
   --background-color-primary: #FF8DCB;
   --background-color-secondary: #FF0070;
+  --background-image: url(../images/cover-image-light.png);
   --font-family: "IBM Plex Mono", sans-serif;
   --font-weight-bold: 700;
   --font-weight-normal: 400;
+  --rec-visible: hidden;
   }
-}
-
-
-.page.theme_light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
-  background: url(../images/cover-image-light.png);
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-.theme_light .rec-decor {
-  display: none;
 }
 
