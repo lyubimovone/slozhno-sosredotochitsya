@@ -3,27 +3,11 @@
   --text-color-secondary: #DB00FF; 
   --text-color-tertiary: #FF0070;
   --text-color-emphasis: #000028;
+  --background-color: #000028;
   --background-color-primary: #FF0070;
   --background-color-secondary: #FF0070;
   --background-image: url(../images/cover-image-dark.png);
-  --font-family: "IBM Plex Mono", sans-serif;
-  --font-weight-bold: 700;
-  --font-weight-normal: 400;
+  --border-color: #FF0070;
+  --border-color-opacity: rgba(255, 0, 112, 0.4);
   --rec-visible: visible;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text-color-primary: #F1B2CE;
-    --text-color-secondary: #DB00FF; 
-    --text-color-tertiary: #FF0070;
-    --text-color-emphasis: #000028;
-    --background-color-primary: #FF0070;
-    --background-color-secondary: #FF0070;
-    --background-image: url(../images/cover-image-dark.png);
-    --font-family: "IBM Plex Mono", sans-serif;
-    --font-weight-bold: 700;
-    --font-weight-normal: 400;
-    --rec-visible: visible;
-    }
-  }

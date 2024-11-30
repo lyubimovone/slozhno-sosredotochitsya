@@ -3,13 +3,13 @@
   --text-color-secondary: #FFC2E6;
   --text-color-tertiary: #353430;
   --text-color-emphasis: #353430;
+  --background-color: #fff1f7;
   --background-color-primary: #FF8DCB;
   --background-color-secondary: #FF0070;
   --background-image: url(../images/cover-image-light.png);
-  --font-family: "IBM Plex Mono", sans-serif;
-  --font-weight-bold: 700;
-  --font-weight-normal: 400;
   --rec-visible: hidden;
+  --border-color: #353430;
+  --border-color-opacity: rgba(50, 49, 45, 0.4);
 }
 
 @media (prefers-color-scheme: light) {
@@ -18,13 +18,12 @@
   --text-color-secondary: #FFC2E6;
   --text-color-tertiary: #353430;
   --text-color-emphasis: #353430;
+  --background-color: #fff1f7;
   --background-color-primary: #FF8DCB;
   --background-color-secondary: #FF0070;
   --background-image: url(../images/cover-image-light.png);
-  --font-family: "IBM Plex Mono", sans-serif;
-  --font-weight-bold: 700;
-  --font-weight-normal: 400;
   --rec-visible: hidden;
+  --border-color: #353430;
+  --border-color-opacity: rgba(50, 49, 45, 0.4);
   }
 }
-

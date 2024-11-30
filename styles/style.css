@@ -4,6 +4,8 @@
   background-size: cover;
   background-attachment: fixed;
   position: relative;
+  font-family: var(--font-family);
+  background-color: var(--background-color);
 }
 
 .header {
@@ -37,16 +39,15 @@
   text-align: center;
   cursor: pointer;
   font-weight: 400;
-  font-family: var(--font-family);
 }
 
 .header__theme-menu-button_active {
   pointer-events: none;
-  border: 1px solid;
+  border: 1px solid var(--border-color);
 }
 
 .header__theme-menu-button:hover {
-  outline: 1px solid var(--text-color-tertiary);
+  border: 1px solid var(--border-color-opacity);
 }
 
 .header__theme-menu-button:focus {
@@ -54,7 +55,7 @@
 }
 
 .header__theme-menu-button:focus-visible {
-  border-block-end: 1px solid var(--text-color-tertiary);
+  border-block-end: 1px solid var(--border-color);
 }
 
 .decorated-zone {
@@ -127,7 +128,6 @@
 
 .header-text__description {
   display: block;
-  font-family: var(--font-family);
   font-size: 18px;
   font-weight: var(--font-weight-bold);
   line-height: 23.4px;
@@ -141,13 +141,24 @@
 .title-decor {
   color: var(--text-color-secondary);
   text-shadow: 4px 4px 0 var(--background-color-secondary);
-  font-family: var(--font-family);
 }
 
 .article__link {
   color: var(--text-color-primary);
-  text-shadow: 2px 2px 0 var(--background-color-secondary);
+  text-shadow: 2px 2px 0 var( --background-color-primary);
   text-decoration: none;
+}
+
+.article__link:hover {
+  border-bottom: 1px solid var(--text-color-primary);
+}
+
+.article__link:focus {
+  outline: none;
+}
+
+.article__link:focus-visible {
+  outline: 1px solid var(--text-color-primary);
 }
 
 .section {
@@ -174,7 +185,6 @@
 }
 
 .section__title {
-  font-family: var(--font-family);
   font-weight: var(--font-weight-bold);
   font-size: 18px;
   line-height: 130%;
@@ -198,7 +208,6 @@
 }
 
 .article__title {
-  font-family: var(--font-family);
   font-weight: var(--font-weight-bold);
   font-size: 18px;
   line-height: 130%;
@@ -206,12 +215,11 @@
   color: var(--text-color-emphasis);
 }
 
-.article__title_secondary {
+.article__subtitle {
   font-weight: var(--font-weight-normal);
 }
 
 .article__text {
-  font-family: var(--font-family);
   font-weight: var(--font-weight-normal);
   font-size: 18px;
   line-height: 130%;
@@ -233,7 +241,6 @@
 }
 
 .gallery__title {
-  font-family: var(--font-family);
   font-weight: var(--font-weight-bold);
   font-size: 18px;
   line-height: 130%;
@@ -281,7 +288,6 @@
 }
 
 .footer__title {
-  font-family: var(--font-family);
   font-weight: var(--font-weight-bold);
   font-size: 157px;
   line-height: 83%;
@@ -289,7 +295,7 @@
   text-shadow: 2px 2px 0 var(--background-color-secondary);
 }
 
-@media (max-width: 769px) {
+@media (max-width: 768px) {
   .header {
     min-block-size: 1024px;
   }
@@ -332,7 +338,7 @@
   }
 }
 
-@media (max-width: 376px) {
+@media (max-width: 620px) {
   .header {
     min-block-size: 668px;
     padding: 10px;
